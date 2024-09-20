@@ -1,14 +1,4 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package standard_theme
- */
-
-get_header();
-?>
+<?php get_header(); ?>
 
 	<main id="primary" class="site-main">
 archive page
