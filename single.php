@@ -1,14 +1,4 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package standard_theme
- */
-
-get_header();
-?>
+<?php get_header(); ?>
 
 <div class="flex">
 	<main id="primary" class="site-main container mx-auto px-4">

@@ -1,10 +1,6 @@
 <?php
 /**
  * standard_theme functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package standard_theme
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
