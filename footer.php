@@ -1,10 +1,21 @@
-<div>
+<div class="flex bg-red-300">
 	<?php if (is_active_sidebar('footer-1')) : ?>
 		<div id="footer-widget-area" class="footer-widget-area container mx-auto py-8">
 			<?php dynamic_sidebar('footer-1'); ?>
 		</div>
 	<?php endif; ?>
 
+	<?php if (is_active_sidebar('footer-2')) : ?>
+		<div id="footer-widget-area" class="footer-widget-area container mx-auto py-8">
+			<?php dynamic_sidebar('footer-2'); ?>
+		</div>
+	<?php endif; ?>
+
+	<?php if (is_active_sidebar('footer-3')) : ?>
+		<div id="footer-widget-area" class="footer-widget-area container mx-auto py-8">
+			<?php dynamic_sidebar('footer-3'); ?>
+		</div>
+	<?php endif; ?>
 </div>
 
 <footer id="colophon" class="site-footer container mx-auto px-4 bg-gray-600 text-white">

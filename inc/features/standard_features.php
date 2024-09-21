@@ -121,7 +121,7 @@ function standard_theme_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', 'standard_theme' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'standard_theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="mb-4 widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
@@ -187,18 +187,41 @@ function mytheme_custom_logo_size() {
 add_action('wp_head', 'mytheme_custom_logo_size');
 
 
-//footer
-
+// Footer Widgets
 function mytheme_widgets_init() {
+    // Footer Widget 1
     register_sidebar(array(
-        'name' => __('Footer Widget', 'mytheme'),
-        'id' => 'footer-1',
-        'description' => __('Voeg widgets toe aan de footer.', 'mytheme'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s p-4 bg-gray-100 rounded-lg">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title text-lg font-semibold mb-4">',
-        'after_title' => '</h2>',
+        'name'          => __('Footer Widget 1', 'mytheme'),
+        'id'            => 'footer-1',
+        'description'   => __('Voeg widgets toe aan footer 1.', 'mytheme'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s p-4">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title text-lg font-semibold mb-4">',
+        'after_title'   => '</h2>',
+    ));
+
+    // Footer Widget 2
+    register_sidebar(array(
+        'name'          => __('Footer Widget 2', 'mytheme'),
+        'id'            => 'footer-2',
+        'description'   => __('Voeg widgets toe aan footer 2.', 'mytheme'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s p-4">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title text-lg font-semibold mb-4">',
+        'after_title'   => '</h2>',
+    ));
+
+    // Footer Widget 3
+    register_sidebar(array(
+        'name'          => __('Footer Widget 3', 'mytheme'),
+        'id'            => 'footer-3',
+        'description'   => __('Voeg widgets toe aan footer 3.', 'mytheme'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s p-4">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title text-lg font-semibold mb-4">',
+        'after_title'   => '</h2>',
     ));
 }
 add_action('widgets_init', 'mytheme_widgets_init');
+
 
