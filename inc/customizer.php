@@ -1,8 +1,6 @@
 <?php
 /**
  * standard_theme Theme Customizer
- *
- * @package standard_theme
  */
 
 /**
